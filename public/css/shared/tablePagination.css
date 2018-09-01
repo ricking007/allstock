@@ -1,0 +1,29 @@
+/*TABLE PAGINATION*/
+.table-pagination tbody tr {
+    display: none;
+}
+.table-pagination thead th[data-sort]{
+    cursor:pointer;
+}
+.table-pagination thead th[data-sort]:after{
+    font-family: 'FontAwesome';
+    content: '\f0dc';
+    float: right;
+    color:inherit;
+    opacity: .5;
+}
+.table-pagination thead th.asc[data-sort]:after{
+    font-family: 'FontAwesome';
+    content: '\f0de';
+    opacity: 1;
+    color:#7A80DD;
+}
+.table-pagination thead th.desc[data-sort]:after{
+    font-family: 'FontAwesome';
+    content: '\f0dd';
+    opacity: 1;
+    color:#7A80DD;
+}
+.table-pagination tbody tr.tr-temp{
+    opacity: 0.5;
+}

@@ -1,0 +1,17 @@
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
+#<filesMatch ".(ico|jpg|jpeg|png|gif|swf|css|js)$">
+#Header set Expires "Sun, 30 Apr 2090 20:00:00 GMT"
+#</filesMatch>
+
+#<ifModule mod_headers.c> 
+#Header set Connection keep-alive 
+#</ifModule>
